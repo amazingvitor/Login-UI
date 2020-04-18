@@ -13,6 +13,11 @@
 		7B1E1E362448B4EB00ED02FE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7B1E1E352448B4EB00ED02FE /* Assets.xcassets */; };
 		7B1E1E392448B4EB00ED02FE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7B1E1E382448B4EB00ED02FE /* Preview Assets.xcassets */; };
 		7B1E1E3C2448B4EC00ED02FE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B1E1E3A2448B4EC00ED02FE /* LaunchScreen.storyboard */; };
+		7B795F8E244A5EF3004B9D94 /* Background.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B795F8D244A5EF3004B9D94 /* Background.swift */; };
+		7B795F90244A8504004B9D94 /* Greetings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B795F8F244A8504004B9D94 /* Greetings.swift */; };
+		7B795F92244A8659004B9D94 /* ButtonLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B795F91244A8659004B9D94 /* ButtonLayout.swift */; };
+		7BEDD0A5244A87E600D7BB29 /* TextFieldLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BEDD0A4244A87E600D7BB29 /* TextFieldLayout.swift */; };
+		7BEDD0AA244A8E1100D7BB29 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BEDD0A9244A8E1100D7BB29 /* Colors.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +29,11 @@
 		7B1E1E382448B4EB00ED02FE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		7B1E1E3B2448B4EC00ED02FE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7B1E1E3D2448B4EC00ED02FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7B795F8D244A5EF3004B9D94 /* Background.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Background.swift; sourceTree = "<group>"; };
+		7B795F8F244A8504004B9D94 /* Greetings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Greetings.swift; sourceTree = "<group>"; };
+		7B795F91244A8659004B9D94 /* ButtonLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonLayout.swift; sourceTree = "<group>"; };
+		7BEDD0A4244A87E600D7BB29 /* TextFieldLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldLayout.swift; sourceTree = "<group>"; };
+		7BEDD0A9244A8E1100D7BB29 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,11 +66,8 @@
 		7B1E1E2E2448B4EA00ED02FE /* Login UI */ = {
 			isa = PBXGroup;
 			children = (
-				7B1E1E2F2448B4EA00ED02FE /* AppDelegate.swift */,
-				7B1E1E312448B4EA00ED02FE /* SceneDelegate.swift */,
-				7B1E1E332448B4EA00ED02FE /* LandingView.swift */,
-				7B1E1E352448B4EB00ED02FE /* Assets.xcassets */,
-				7B1E1E3A2448B4EC00ED02FE /* LaunchScreen.storyboard */,
+				7BEDD0A8244A8A9300D7BB29 /* Support Files */,
+				7BEDD0A6244A8A7400D7BB29 /* Views */,
 				7B1E1E3D2448B4EC00ED02FE /* Info.plist */,
 				7B1E1E372448B4EB00ED02FE /* Preview Content */,
 			);
@@ -73,6 +80,38 @@
 				7B1E1E382448B4EB00ED02FE /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		7BEDD0A6244A8A7400D7BB29 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				7B1E1E332448B4EA00ED02FE /* LandingView.swift */,
+				7B1E1E3A2448B4EC00ED02FE /* LaunchScreen.storyboard */,
+				7BEDD0A7244A8A7B00D7BB29 /* Views Support */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		7BEDD0A7244A8A7B00D7BB29 /* Views Support */ = {
+			isa = PBXGroup;
+			children = (
+				7B795F8D244A5EF3004B9D94 /* Background.swift */,
+				7B795F8F244A8504004B9D94 /* Greetings.swift */,
+				7B795F91244A8659004B9D94 /* ButtonLayout.swift */,
+				7BEDD0A4244A87E600D7BB29 /* TextFieldLayout.swift */,
+				7BEDD0A9244A8E1100D7BB29 /* Colors.swift */,
+			);
+			path = "Views Support";
+			sourceTree = "<group>";
+		};
+		7BEDD0A8244A8A9300D7BB29 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				7B1E1E2F2448B4EA00ED02FE /* AppDelegate.swift */,
+				7B1E1E312448B4EA00ED02FE /* SceneDelegate.swift */,
+				7B1E1E352448B4EB00ED02FE /* Assets.xcassets */,
+			);
+			path = "Support Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -147,8 +186,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				7B1E1E302448B4EA00ED02FE /* AppDelegate.swift in Sources */,
+				7BEDD0AA244A8E1100D7BB29 /* Colors.swift in Sources */,
 				7B1E1E322448B4EA00ED02FE /* SceneDelegate.swift in Sources */,
 				7B1E1E342448B4EA00ED02FE /* LandingView.swift in Sources */,
+				7BEDD0A5244A87E600D7BB29 /* TextFieldLayout.swift in Sources */,
+				7B795F92244A8659004B9D94 /* ButtonLayout.swift in Sources */,
+				7B795F90244A8504004B9D94 /* Greetings.swift in Sources */,
+				7B795F8E244A5EF3004B9D94 /* Background.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -296,7 +340,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "io.github.amazingvitor.Login-UI";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -316,7 +360,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "io.github.amazingvitor.Login-UI";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
